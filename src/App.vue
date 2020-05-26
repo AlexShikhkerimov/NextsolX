@@ -8,12 +8,12 @@
       <main class="app-content">
 
 
-<!--     Carousel row-->
+        <!--        // Carousel row-->
         <div class="carousel-row">
 
-          <div class="carousel"></div>
+          <carousel style="grid-column: 1/7" />
 
-          <inspiration />
+          <inspiration style="grid-column: 7/9" />
 
         </div>
 
@@ -25,20 +25,29 @@
 </template>
 
 <script>
-import appHeader from './components/Header.vue'
-import inspiration from './components/Inspiration.vue'
+import AppHeader from './components/Header.vue'
+import Carousel from './components/Carousel.vue'
+import Inspiration from './components/Inspiration.vue'
 
 
 export default {
   name: 'App',
   components: {
-    appHeader,
-    inspiration
+    AppHeader,
+    Carousel,
+    Inspiration
   }
 }
 </script>
 
 <style lang="scss">
 @import "./src/styles/global";
+
+.carousel-row {
+  display: grid; // carousel is incorrect inside flex parent
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 2px;
+  margin-bottom: 2px;
+}
 
 </style>

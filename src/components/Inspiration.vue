@@ -81,10 +81,6 @@ export default {
                 &:focus {
                     outline: none;
                 }
-
-                option {
-                    text-align: center;
-                }
             }
         }
     }

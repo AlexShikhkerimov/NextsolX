@@ -10,13 +10,13 @@
         </p>
 
         <div class="inspiration-controls">
-            <select v-model="selectedType">
+            <select class="control" v-model="selectedType">
                 <option disabled value="0">Chart type</option>
                 <option value="pie">Pie</option>
                 <option value="line">Line</option>
                 <option value="bar">Bar</option>
             </select>
-            <a href="#">Insert</a>
+            <div class="control" @click="addChart">Insert</div>
         </div>
 
     </div>
@@ -27,6 +27,12 @@ export default {
     data() {
         return {
             selectedType: 0
+        }
+    },
+    methods: {
+        addChart() {
+            this.$store.dispatch('addChart', this.selectedType)
+            this.selectedType = 0
         }
     }
 }
@@ -47,8 +53,7 @@ export default {
         }
 
         &-controls {
-            select,
-            a {
+            .control {
                 background: transparent;
                 border: 1px solid $white;
                 color: $white;
@@ -71,7 +76,7 @@ export default {
                 }
             }
 
-            select {
+            select.control {
                 max-width: 185px;
                 &:focus {
                     outline: none;

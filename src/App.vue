@@ -5,17 +5,35 @@
 
       <app-header />
 
+      <main class="app-content">
+
+
+<!--     Carousel row-->
+        <div class="carousel-row">
+
+          <div class="carousel"></div>
+
+          <inspiration />
+
+        </div>
+
+      </main>
+
+
     </div>
   </div>
 </template>
 
 <script>
 import appHeader from './components/Header.vue'
+import inspiration from './components/Inspiration.vue'
+
 
 export default {
   name: 'App',
   components: {
-    appHeader
+    appHeader,
+    inspiration
   }
 }
 </script>

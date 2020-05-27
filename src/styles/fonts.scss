@@ -1,0 +1,62 @@
+ @font-face {
+  font-family: 'MyriadPro';
+  src: url('~@/assets/fonts/MyriadPro/MyriadPro-Regular.eot');
+  src: url('~@/assets/fonts/MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('~@/assets/fonts/MyriadPro/MyriadPro-Regular.ttf') format('font-opentype'),
+  url('~@/assets/fonts/MyriadPro/MyriadPro-Regular.woff') format('font-woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VerdanaBold';
+  src: url("~@/assets/fonts/Verdana/VerdanaBold/Verdana-Bold.eot");
+  src: url('~@/assets/fonts/Verdana/VerdanaBold/Verdana-Bold.eot?#iefix') format('embedded-opentype'),
+  url('~@/assets/fonts/Verdana/VerdanaBold/Verdana-Bold.ttf') format('font-opentype'),
+  url('~@/assets/fonts/Verdana/VerdanaBold/Verdana-Bold.woff') format('font-woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ @font-face {
+   font-family: 'VerdanaRegular';
+   src: url("~@/assets/fonts/Verdana/VerdanaRegular/Verdana.eot");
+   src: url('~@/assets/fonts/Verdana/VerdanaRegular/Verdana.eot?#iefix') format('embedded-opentype'),
+   url('~@/assets/fonts/Verdana/VerdanaRegular/Verdana.ttf') format('font-opentype'),
+   url('~@/assets/fonts/Verdana/VerdanaRegular/Verdana.woff') format('font-woff');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'RobotoRegular';
+   src: url('~@/assets/fonts/Roboto/RobotoRegular/Roboto-Regular.eot');
+   src: local('Roboto'), local('Roboto-Regular'),
+   url('~@/assets/fonts/Roboto/RobotoRegular/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+   url('~@/assets/fonts/Roboto/RobotoRegular/Roboto-Regular.woff') format('woff'),
+   url('~@/assets/fonts/Roboto/RobotoRegular/Roboto-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'RobotoMedium';
+   src: url('~@/assets/fonts/Roboto/RobotoMedium/Roboto-Medium.eot');
+   src: local('Roboto Medium'), local('Roboto-Medium'),
+   url('~@/assets/fonts/Roboto/RobotoMedium/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+   url('~@/assets/fonts/Roboto/RobotoMedium/Roboto-Medium.woff') format('woff'),
+   url('~@/assets/fonts/Roboto/RobotoMedium/Roboto-Medium.ttf') format('truetype');
+   font-weight: 500;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'RobotoLight';
+   src: url('~@/assets/fonts/Roboto/RobotoLight/Roboto-Light.eot');
+   src: local('Roboto Light'), local('Roboto-Light'),
+   url('~@/assets/fonts/Roboto/RobotoLight/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+   url('~@/assets/fonts/Roboto/RobotoLight/Roboto-Light.woff') format('woff'),
+   url('~@/assets/fonts/Roboto/RobotoLight/Roboto-Light.ttf') format('truetype');
+   font-weight: 300;
+   font-style: normal;
+ }

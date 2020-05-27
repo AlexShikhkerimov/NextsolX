@@ -1,5 +1,5 @@
 <template>
-    <agile :options="carouselOptions">
+    <agile :options="carouselOptions" class="slide-card">
 
         <div class="slide" v-for="(slide, index) in slides" :key="index"
              :style="{ background: 'url(' + require(`@/assets/${slide.img}`) + ')' }">
@@ -129,6 +129,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~@/styles/slide.scss";
+
     .agile {
         color: $white;
         height: 100%;
@@ -146,42 +148,6 @@ export default {
 
             &.agile__dot--current {
                 opacity: 1;
-            }
-        }
-
-        .slide {
-            color: $white;
-            display: block;
-            height: 400px;
-            object-fit: cover;
-            width: 100%;
-            background-color: black;
-
-            &-body {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                margin: 0 auto;
-                max-width: 450px;
-                max-height: 240px;
-                /*padding: 115px 220px 50px;*/
-                overflow: hidden;
-                padding-top: 115px;
-
-                & > * {
-                    margin-bottom: 35px;
-                    text-align: center;
-                }
-            }
-
-            &-link-bar {
-                display: flex;
-
-                a {
-                    border-left: 1px solid $white;
-                    border-right: 1px solid $white;
-                    padding: 0 20px;
-                }
             }
         }
     }

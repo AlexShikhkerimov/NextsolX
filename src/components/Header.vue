@@ -7,7 +7,7 @@
             </div>
 
             <div class="header__sub-logo">
-                Inform Connect Inspire
+                Inform. Connect. Inspire.
             </div>
 
         </div>
@@ -56,7 +56,12 @@
         }
 
         &__sub-logo {
+            color: $darkShaft;
+            font-family: "RobotoLight";
             font-size: 14px;
+            font-weight: 400;
+            line-height: 50.24px;
+            letter-spacing: 0.49px;
         }
 
         &__top-bar {
@@ -64,6 +69,9 @@
             display: flex;
             justify-content: flex-end;
             margin-bottom: 40px;
+            font-family: 'VerdanaRegular', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
 
             a {
                 display: inline-block;
@@ -72,22 +80,31 @@
 
             .lang-item {
                 border: 1px solid #d8d8d8;
-                color: #d8d8d8;
+                color: $silver;
                 cursor: pointer;
                 display: inline-block;
                 padding: 3px;
+                transition: .5s;
 
                 &.active {
                     border: 1px solid $black;
                     color: $lightShaft;
                 }
+
+                &:hover {
+                    background: $black;
+                    color: $white;
+                }
             }
         }
 
         &__nav-bar {
+            font-family: "RobotoRegular";
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
 
             .nav {
-                text-transform: uppercase;
                 display: flex;
                 align-items: center;
             }

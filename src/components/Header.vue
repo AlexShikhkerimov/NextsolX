@@ -37,11 +37,31 @@
                     <li><a href="#">Smart Living</a></li>
                 </ul>
 
+                <Slide class="mobile-menu" right>
+                    <a href="#">DEsign+lifestyle</a>
+                    <a href="#">trends</a>
+                    <a href="#">infodelight</a>
+                    <a href="#">Smart Living</a>
+
+                    <a href="#">Über uns</a>
+                    <a href="#">Redaktion</a>
+                </Slide>
+
             </nav>
 
         </div>
     </header>
 </template>
+
+<script>
+    import { Slide } from 'vue-burger-menu'
+
+    export default {
+        components: {
+            Slide
+        }
+    }
+</script>
 
 <style lang="scss">
     .header {
@@ -76,6 +96,9 @@
             a {
                 display: inline-block;
                 margin-right: 25px;
+                @media screen and (max-width: $small) {
+                    display: none;
+                }
             }
 
             .lang-item {
@@ -107,6 +130,10 @@
             .nav {
                 display: flex;
                 align-items: center;
+
+                @media screen and (max-width: $small) {
+                    display: none;
+                }
             }
 
             li {
@@ -130,6 +157,18 @@
                 &:last-child a {
                     padding-right: 0;
                 }
+            }
+        }
+
+        .mobile-menu {
+            display: none;
+
+            @media screen and (max-width: $small) {
+                display: block;
+            }
+
+            .bm-burger-button {
+                top: 60px;
             }
         }
     }
